@@ -35,8 +35,13 @@
 > git status : 깃이 관리하는 파일을 알 수 있다
 
 > git add 파일명 : 깃이 파일을 추적하도록 설정(staging area 등록)
+
 > git commit -m {이름} : repository에 저장
 
 >git config --global user.eamil : 이메일 추가
- git config --global user.name : 이름 추가
- 목록 확인 : git config --global --list
+ 
+>git config --global user.name : 이름 추가
+ 
+>목록 확인 : git config --global --list
+
+>git log : 로그를 보여준다
