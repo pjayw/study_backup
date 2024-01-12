@@ -45,3 +45,37 @@
 >목록 확인 : git config --global --list
 
 >git log : 로그를 보여준다
+
+>git commit --amend : 수정 , insert키로 수정 
+
+> 수정페이지 탈출 -> :wq
+
+## 로컬저장소
+
+- git add . 을 하면 현재 폴더의 변동사항을 한번에 추가
+- 깃 허브 업로드 : git remote add 지정할이름 **{깃허브주소}**
+- 깃 허브 수정: git push origin master
+- 연결된 저장소 확인 : git remote -v 
+- shift + insert 또는 우클릭 시 복사 가능
+- git clone **{저장소 주소}** 집컴과 강의실 저장소 일치시킴
+> 클론은 최초로 받을때만 쓰고, 다음부터는 git에 대한 정보가 있기때문에 
+git remote 정보를 받을 수 있다.
+
+## 강의 및 집에서 파일 저장 루틴
+1. 강의장에서 (academy폴더에) 새 파일 생성
+2. add commit push (gitlab으로 푸시) *push -> (업로드)
+3. 집(home 폴더에서) git pull
+4. 집에서 새 파일 생성
+5. add commit push (gitlab으로 푸시) 
+6. 강의장에서 git pull gitlab master
+
+## 집에서 강의장에 있는 파일 저장
+1. gitlab에서 clone 복사
+2. git clone 주소
+3. cd 내려받은폴더이름/ -> 마스터가 떠야됨
+*주소 이름 바꾸기*
+- git remote rename 원래이름 바꿀이름
+- 새 파일 생성 -> touch 만들파일이름.확장자
+
+## 자주 하는 실수 
+- 강의장에서 저장한 것을 원격 저장소에 push하지 않고 집에서 수정 후 push 한 후 강의장에서 pull해서 받았더니 버전이 안맞아서 merge가 일어남 

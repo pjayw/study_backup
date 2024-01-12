@@ -1,17 +1,15 @@
-import random
+while True:
+    N = int(input())
 
-user_input = int(input())
-selected_numbers = []
-sum_of_selected_numbers = 0
+    if 9 <= N <= 199 and N % 2 != 0:
+        break
 
-for count in range(user_input) :
-    number = random.randint(1,10000)
-    selected_numbers.append(number)
-    if number % 2 != 0:
-        sum_of_selected_numbers += number
+scores = list(map(int, input().split))
+scores.sort()
 
-print( sum_of_selected_numbers)
-
+middle_number = N // 2
+median = scores[middle_number]
+print(median)
 # ctrl + alt + 방향키 위, 아래 | 포커싱 증가
 # ctrl + 왼쪽, 오른쪽 방향키
 # alt + 방향키 | 포커싱 되어있는 줄 위치 이동
